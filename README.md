@@ -2,6 +2,9 @@
 
 ERC-721 based property tokens which can be traded on Markeplace.
 
+# Testing Contracts
+Run below command to test your contracts
+`truffle test`
 
 # ZoKrates Process (zkSNARKs)
 
