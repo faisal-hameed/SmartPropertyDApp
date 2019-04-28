@@ -1,3 +1,4 @@
+
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -18,11 +19,11 @@
  *
  */
 
-// const HDWalletProvider = require('truffle-hdwallet-provider');
-// const infuraKey = "fj4jll3k.....";
-//
-// const fs = require('fs');
-// const mnemonic = fs.readFileSync(".secret").toString().trim();
+const HDWalletProvider = require('truffle-hdwallet-provider');
+const infuraKey = "f342ad1be78745b0aae9ac0afb51c5d7";
+
+const fs = require('fs');
+const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 module.exports = {
   /**
@@ -49,6 +50,16 @@ module.exports = {
       //gas: 6721975,
       //gasPrice: 20000000000
      },
+
+     rinkeby: {
+      provider: function () {
+        return new HDWalletProvider(mnemonic, `https://rinkeby.infura.io/v3/${infuraKey}`)
+      },
+      network_id: '4',
+      //gas: 4500000,
+      //gasPrice: 10000000000
+      //from: "0x627306090abaB3A6e1400e9345bC60c78a8BEf57"
+    },
 
     // Another network with more advanced options...
     // advanced: {

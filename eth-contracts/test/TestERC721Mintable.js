@@ -54,7 +54,7 @@ contract('TestERC721Mintable', accounts => {
             try {
                 tx = await this.contract.transferFrom(account_one, account_two, tokenId1);
             } catch (e) {
-                console.log(e);
+                //console.log(e);
                 reverted = true;
             }
 
@@ -88,7 +88,7 @@ contract('TestERC721Mintable', accounts => {
         it('should return contract owner', async function () {
             let expectedOwner = account_one;
 
-            let owner = await this.contract.getOwner.call();
+            let owner = await this.contract.getOwner();
 
             assert.equal(owner, expectedOwner, 'Contract owner is not correct');
         })

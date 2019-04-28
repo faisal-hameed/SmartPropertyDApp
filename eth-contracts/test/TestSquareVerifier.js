@@ -12,7 +12,7 @@ contract('TestERC721Mintable', accounts => {
         })
 
         it('It should accept correct proof', async function() {
-            console.log(Proof)
+            //console.log(Proof)
             let result = await this.contract.verifyTx.call(
                 Proof.proof.A, 
                 Proof.proof.A_p, 
