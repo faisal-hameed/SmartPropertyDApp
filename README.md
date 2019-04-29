@@ -50,8 +50,25 @@ Configuration for deployment on `rinkeby` network is added in `truffle-config.js
 Run below command for deployment.  
 `truffle migrate --network rinkeby`
 
-### Contract Address
+## Contract Addresses
+ERC-721 Token  
 `https://rinkeby.etherscan.io/address/0x5b257bf2f057a5c20bbcb51e082ce21b05379170`
+SolnSquare Verifier  
+`https://rinkeby.etherscan.io/address/0x9771b281eAbe2D9688F9bE6E9Df6d88887fd7C39`
+Square Verifier
+`https://rinkeby.etherscan.io/address/0x4f5985b25058816FE66778eb8603BA0e3aB2B0ea`
+
+## Contracts ABI
+Run `truffle compile` to compile contracts, it will generate contracts ABI.  
+Contracts ABI can be found in build folder.  
+
+ERC-721 Token  
+`eth-contracts\build\contracts\CustomERC721Token.json`  
+SolnSquare Verifier  
+`eth-contracts\build\contracts\SolnSquareVerifier.json`  
+Square Verifier  
+`eth-contracts\build\contracts\SquareVerifier.json`  
+
 
 ![Deployment](images/deployment.png)
 
